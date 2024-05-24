@@ -1,0 +1,30 @@
+.ivc-container{
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+
+.ivc-image-display{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.ivc-loading-msg{
+    font-size: 1.5rem;
+    color: rgb(0, 128, 0);
+    animation-name: loadingAnimation;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadingAnimation {
+    from {
+        color: rgb(255, 255, 255);
+    }
+
+    to{
+        color: rgb(0, 209, 0);
+    }
+}
