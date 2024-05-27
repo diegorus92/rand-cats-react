@@ -11,6 +11,18 @@ export default class CatApiService{
         urlImageResult = URL.createObjectURL(blobResponse);
         return urlImageResult;
    }
+
+   getRandomCatWithText = async (text) => {
+      const response = await fetch(`${this.baseUrl}cat/says/${text}?${new URLSearchParams({
+         fontColor: '#c0c',
+         fontSize: 70,
+      })}`);
+
+      const blobResponse = await response.blob();
+
+      const urlImageResult = URL.createObjectURL(blobResponse);
+      return urlImageResult;
+   }
 }
 
 
