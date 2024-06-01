@@ -1,0 +1,17 @@
+.drop-list-selector-container{
+    /*background-color: red;*/
+    display:inline;
+    padding: 5% 10%;
+    width: 135px;
+}
+
+.drop-list-selector-select{
+    font-size: 1rem;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 38%;
+}
+
+.drop-list-selector-label{
+    font-size: 1.1rem;
+}

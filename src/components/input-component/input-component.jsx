@@ -1,6 +1,7 @@
+import './input-component.css';
 import {useState, useEffect} from 'react';
 
-const Input = (({name, inputText}) => {
+const Input = (({name, inputText, color}) => {
     const [stateValueText, setStateValueText] = useState("");
     useEffect(() => {
         inputText(stateValueText);
@@ -14,7 +15,7 @@ const Input = (({name, inputText}) => {
 
     return (
         <>
-            <input type="text" name={name} placeholder="Enter a text here"  onChange={inputChange}/>
+            <input className='input-text' type="text" name={name} style={color = {color}} placeholder="Enter a text here"  onChange={inputChange}/>
         </>
     );
 }) ;

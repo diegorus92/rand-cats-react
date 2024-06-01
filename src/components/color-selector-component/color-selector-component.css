@@ -1,0 +1,24 @@
+.color-selector-container{
+  display: block;
+}
+
+.color-select-input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.color-select-input::-webkit-color-swatch{
+    border-radius: 50px;
+    border: none;
+}
+
+.color-select-input::-moz-color-swatch{
+    border-radius: 50px;
+    border: none;
+}

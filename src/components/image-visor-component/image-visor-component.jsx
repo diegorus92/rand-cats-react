@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import './image-visor-component.css';
 import CatService  from '../../services/cat-api-service.jsx';
 
