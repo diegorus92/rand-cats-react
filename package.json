@@ -11,7 +11,7 @@
 
     "homepage": "http://diegorus92.github.io/rand-cats-react",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist" 
   },
   "dependencies": {
     "cataas-api": "^1.1.2",
